@@ -219,6 +219,10 @@ struct RangeTree {
 		std::cout << "\n";
 	}
 
+	unsigned int allocation_lower_bound() const {
+		return tree.size() * sizeof(Range);
+	}
+
 private:
 	Tree tree;
 };

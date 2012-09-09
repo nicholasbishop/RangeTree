@@ -41,6 +41,8 @@ void range_tree_uint_release(RangeTreeUInt *rt, unsigned v);
 
 void range_tree_uint_print(const RangeTreeUInt *rt);
 
+unsigned int range_tree_uint_allocation_lower_bound(const RangeTreeUInt *rt);
+
 #ifdef __cplusplus
 }
 #endif

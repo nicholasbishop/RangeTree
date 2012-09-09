@@ -57,3 +57,8 @@ void range_tree_uint_print(const RangeTreeUInt *rt)
 {
 	rt->print();
 }
+
+unsigned int range_tree_uint_allocation_lower_bound(const RangeTreeUInt *rt)
+{
+	return rt->allocation_lower_bound();
+}
