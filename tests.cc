@@ -226,5 +226,7 @@ int main()
 	test_release_5();
 	test_release_6();
 
+	std::cout << "All tests passed" << std::endl;
+
 	return 0;
 }
