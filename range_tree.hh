@@ -188,12 +188,12 @@ struct RangeTree {
 	}
 
 	bool has(T t) const {
-		TreeIter iter = tree.find(Range(t));
+		TreeIterConst iter = tree.find(Range(t));
 		return (iter != tree.end()) && (t <= iter->max);
 	}
 
 	bool has_range(T min, T max) const {
-		TreeIter iter = tree.find(Range(min, max));
+		TreeIterConst iter = tree.find(Range(min, max));
 		return (iter != tree.end()) && (min == iter->min && max == iter->max);
 	}
 
