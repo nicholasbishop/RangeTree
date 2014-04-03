@@ -74,13 +74,7 @@ struct RangeTree {
 		TreeIter iter = tree.find(Range(t));
 		assert(iter != tree.end());
 		Range cur = *iter;
-		TreeIter prev = iter;
-		TreeIter next = iter;
-		--prev;
-		++next;
 
-		/* Remove the original range (note that this does not
-		   invalidate the prev/next iterators) */
 		tree.erase(iter);
 
 		/* Construct two new ranges that together cover the original
